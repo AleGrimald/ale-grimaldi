@@ -1,0 +1,15 @@
+.parrafo{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.main_titulo{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(50, 50, 50);
+}
+
+.main_p1, .main_p2{
+    font-size: 20px;
+    font-weight: 500;
+}

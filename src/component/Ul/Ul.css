@@ -1,0 +1,16 @@
+.link_menu{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main_redes{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+}

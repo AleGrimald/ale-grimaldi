@@ -1,0 +1,20 @@
+.main_img{
+    width: 70%;
+    height: 60dvh;
+    border-radius: 50%;
+    animation: bordes 2s ease-in-out infinite;
+}
+
+@keyframes bordes {
+    0%{
+        box-shadow: 0 0 35px 2px black;
+    }
+
+    50%{
+        box-shadow: 0 0 35px 2px rgb(12, 48, 115);
+    }
+
+    100%{
+        box-shadow: 0 0 35px 2px black;
+    }
+}
