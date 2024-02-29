@@ -3,20 +3,15 @@ import Li from '../Li';
 import Imagen from '../Imagen';
 
 const Ul = (props) => {
-    const {clase} = props;
-    const {arrLi}=props.datosMenu;
-    const {img, alter}=props.datosMenu.imagenes.flecha;
-    const {clase_flecha}=props.datosMenu.clases;
+    const {clase, datos, imagen, claseFlecha, estilos, click} = props;
 
     return <ul className={clase}>
         {
-            <Imagen/>===null
-            ?arrLi.map((elem,key)=><Li texto={elem} key={key}/>)
-            :arrLi.map((elem,key)=><div>
-                <Li texto={elem} key={key}/>
-                <Imagen clase={clase_flecha} imagen={img} alter={alter}/>
-            </div>)
-        
+            imagen!=null?datos.map((elem,key)=><div className={claseFlecha} style={{background:estilos[key].fondo, color:estilos[key].color, boxShadow:estilos[key].brillo}}>
+                    <Li texto={elem} key={key}/>
+                    <Imagen imagen={imagen}/>
+                </div>)
+            :datos.map((elem,key)=><Li texto={elem} key={key} click={click[key]}/>)
         }
     </ul>
 }

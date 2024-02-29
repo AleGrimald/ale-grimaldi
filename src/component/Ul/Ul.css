@@ -1,9 +1,15 @@
 .link_menu{
-    width: 50%;
     display: flex;
     justify-content: right;
     align-items: center;
     gap: 2rem;
+}
+.link_menu>li{
+    padding: .2rem;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(254, 254, 255);
+    cursor: pointer;
 }
 
 .main_redes{
@@ -12,5 +18,23 @@
     justify-content: left;
     align-items: center;
     gap: 2rem;
-    padding: 0;
+    padding:0;
+}
+
+.main_flecha{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 15px;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+.main_flecha>li{
+    font-size: 16px;
+    font-weight: 600;
+}
+.main_flecha:hover>img{
+    transform: rotate(135deg);
+    transition: all .6s;
 }

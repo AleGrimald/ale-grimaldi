@@ -2,7 +2,7 @@ import './Logo.css';
 import Imagen from '../Imagen';
 import Parrafo from '../Parrafo'
 const Logo=(props)=>{
-    const {img, alter, parrafo}=props.datosLogo;
+    const {img, alter, parrafo}=props;
     
     return <div className='logo'>
         <Imagen imagen={img} alter={alter}/>

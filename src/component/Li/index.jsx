@@ -1,7 +1,7 @@
 import './Li.css';
 const Li = (props)=>{
-    const {texto, key}= props;
-    return <li key={key}>
+    const {texto, key, click}= props;
+    return <li key={key} onClick={click}>
         {texto}
     </li>
 }
