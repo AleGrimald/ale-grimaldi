@@ -1,7 +1,7 @@
 import './Parrafo.css';
 const Parrafo =(props)=>{
-    const {texto, clase}=props;
-    return <p className={clase}>
+    const {texto, clase, key}=props;
+    return <p className={clase} key={key}>
         {texto}
     </p>
 }

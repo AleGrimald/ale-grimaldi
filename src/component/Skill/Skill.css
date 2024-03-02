@@ -2,11 +2,11 @@
     width: 100%;
     margin: 1rem 0;
     height: 90dvh;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+    flex-flow: column wrap;
 }
 .skill_container{
     width: 30%;

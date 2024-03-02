@@ -4,11 +4,10 @@
     padding: 0 3rem;
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: left;
     align-items: center;
-    flex-wrap: wrap;
     color: white;
-    gap: 2rem;
 }
 
 .contenedor_texto>p:first-child{
@@ -30,7 +29,7 @@
 }
 .firma{
     width: 235px;
-    height: 105px;
+    height: 100px;
     filter: drop-shadow(0 0 3px rgb(0, 0, 0));
 }
 

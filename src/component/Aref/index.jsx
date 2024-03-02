@@ -1,9 +1,9 @@
 import './Aref.css';
 
 const Aref=(props)=>{
-    const {link, clase} = props;
-    return <a href={link} className={clase}>
-        Certificacion
+    const {link, clase, texto, key} = props;
+    return <a href={link} className={clase} key={key}>
+        {texto}
     </a>
 }
 

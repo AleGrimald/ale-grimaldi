@@ -12,7 +12,7 @@ const Formacion=(props)=>{
                 <Parrafo texto={tarjeta.titulo} clase='formacion_titulo'/>
                 <Parrafo texto={tarjeta.texto} clase='formacion_texto'/>
                 <div>
-                    <Aref link={tarjeta.link} clase='formacion_link'/>
+                    <Aref link={tarjeta.link} clase='formacion_link' texto={tarjeta.nombre}/>
                     <Imagen imagen='./flechalink.png' alter='ir al link' clase='formacion_link_img'/>
                 </div>
                 

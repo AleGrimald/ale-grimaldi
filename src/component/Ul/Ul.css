@@ -38,3 +38,17 @@
     transform: rotate(135deg);
     transition: all .6s;
 }
+
+.proyecto_ul{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.proyecto_ul>li{
+    padding: .8rem 1rem;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 12px;
+}

@@ -88,9 +88,10 @@ function App() {
       clase_p2:'main_p2',
       clase_link:'main_redes',
       clase_foto:'main_img',
-      clase_flecha:'main_flecha'
+      clase_flecha:'main_flecha',
     },
     arrLi:['Github','Linkedin','Curriculum'],
+    aref:['https://github.com/AleGrimald','https://www.linkedin.com/in/alejandro-grimaldi-828868262/','#'],
     imagenes:{
       foto:{
         icono:'Mifoto.jpeg',
@@ -180,44 +181,127 @@ function App() {
       titulo:'Programa Oracle Next Education - Front-end',
       texto:'2023 - ONE & Alura',
       link:'https://app.aluracursos.com/program/certificate/3f94b331-85cf-44c7-adb9-0f7e9ecb0396',
-      clase:'formacion_tarjeta'
+      clase:'formacion_tarjeta',
+      nombre:'Certificado'
     },
     { 
       img:'./freecodecamplogo.svg',
       titulo:'Front End Development Libraries',
       texto:' 2024 - FreeCodeCamp',
       link:'https://freecodecamp.org/espanol/certification/AleGrimaldi/front-end-development-libraries',
-      clase:'formacion_tarjeta'
+      clase:'formacion_tarjeta',
+      nombre:'Certificado'
     },
     { 
       img:'./aluralogo.png',
       titulo:'Formación SQL con MySQL',
       texto:'2023 - ONE & Alura',
       link:'https://app.aluracursos.com/degree/certificate/be62438e-71ec-492b-a880-67d24db656db',
-      clase:'formacion_tarjeta'
+      clase:'formacion_tarjeta',
+      nombre:'Certificado'
     },
     { 
       img:'./freecodecamplogo.svg',
       titulo:'Backend Web - Node.js y Express',
       texto:'2024 - FreeCodeCamp',
       link:'s/Certificacion',
-      clase:'formacion_tarjeta'
+      clase:'formacion_tarjeta',
+      nombre:'Certificado'
     },
     { 
       img:'./iestafiviejo.png',
       titulo:'Tecnicatura en Desarrollo de Software - JAVA',
       texto:'2023 - IES Tafi Viejo ext Yerba Buena',
       link:'s/Certificacion',
-      clase:'formacion_tarjeta'
+      clase:'formacion_tarjeta',
+      nombre:'Certificado'
     },
     { 
       img:'./iestafiviejo.png',
       titulo:'Tecnicatura en Desarrollo de Software - C++',
       texto:'2023 - IES Tafi Viejo ext Yerba Buena',
       link:'s/Certificacion',
-      clase:'formacion_tarjeta'
+      clase:'formacion_tarjeta',
+      nombre:'Certificado'
     },
   ]
+  const datosProyecto= [
+    {
+      img:'./barberia.png',
+      texto:['Barberia Alura','Desarrollado en el curso Alura Latam','Tecnologias Implementadas:'],
+      alter:'Imagen de la pagina',
+      arrLi:['HTML5','CSS3','Diseño Responsivo'],
+      flecha:'./flecha.svg',
+      arrLink:[
+        {
+          txtLink:'Ver Demo',
+          link:'https://alegrimald.github.io/La-Barberia/',
+          claseLink:'proyecto_link'
+        },
+        {
+          txtLink:'Ver Repositorio',
+          link:'https://github.com/AleGrimald/La-Barberia',
+          claseLink:'proyecto_link'
+        },
+      ],
+      clase:'proyecto_img'
+    },
+    {
+      img:'./encriptador.png',
+      texto:['Encriptador de Texto','Desarrollado en el curso Alura Latam','Tecnologias Implementadas'],
+      alter:'Imagen de la pagina',
+      arrLi:['HTML5','CSS3','Diseño Responsivo','JS'],
+      flecha:'./flecha.svg',
+      arrLink:[
+        {
+          txtLink:'Ver Demo',
+          link:'https://alegrimald.github.io/Encriptador-Ale/'
+        },
+        {
+          txtLink:'Ver Repositorio',
+          link:'https://github.com/AleGrimald/Encriptador-Ale'
+        },
+      ],
+      clase:'proyecto_img'
+    },
+    {
+      img:'./recetas.png',
+      texto:['Recetas de Cocina','Desarrollado en el curso Alura Latam','Tecnologias Implementadas'],
+      alter:'Imagen de la pagina',
+      arrLi:['HTML5','CSS3','Diseño Responsivo'],
+      flecha:'./flecha.svg',
+      arrLink:[
+        {
+          txtLink:'Ver Demo',
+          link:'https://alegrimald.github.io/Recetas-Cocina-Ale/'
+        },
+        {
+          txtLink:'Ver Repositorio',
+          link:'https://github.com/AleGrimald/Recetas-Cocina-Ale'
+        },
+      ],
+      clase:'proyecto_img'
+    },
+    {
+      img:'./alurageek.png',
+      texto:['AluraGeek','Desarrollado en el curso Alura Latam','Tecnologias Implementadas'],
+      alter:'Imagen de la pagina',
+      arrLi:['HTML5','CSS3','Diseño Responsivo'],
+      flecha:'./flecha.svg',
+      arrLink:[
+        {
+          txtLink:'Ver Demo',
+          link:'https://alegrimald.github.io/AleGeek/'
+        },
+        {
+          txtLink:'Ver Repositorio',
+          link:'https://github.com/AleGrimald/AleGeek'
+        },
+      ],
+      clase:'proyecto_img'
+    },
+  ]
+  
 
   return (
     <div className="App">
@@ -240,7 +324,7 @@ function App() {
       }
 
       {
-        btnProyecto?<Proyecto/>:<></>
+        btnProyecto?<Proyecto datosProyecto={datosProyecto}/>:<></>
       }
 
       {
