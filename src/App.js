@@ -300,9 +300,107 @@ function App() {
       ],
       clase:'proyecto_img'
     },
+    {
+      img:'./ale6.png',
+      texto:['Ale6','Proyecto Personal Simula el Juego Quini6','Tecnologias Implementadas'],
+      alter:'Imagen de la pagina',
+      arrLi:['React','Diseño Responsivo'],
+      flecha:'./flecha.svg',
+      arrLink:[
+        {
+          txtLink:'Ver Demo',
+          link:'https://aleg6.netlify.app/'
+        },
+        {
+          txtLink:'Ver Repositorio',
+          link:'https://github.com/AleGrimald/Ale6'
+        },
+      ],
+      clase:'proyecto_img'
+    },
+    {
+      img:'./semanaies.png',
+      texto:['Semana IES','Exposicion Sobre Delitos Informaticos, IES YB','Tecnologias Implementadas'],
+      alter:'Imagen de la pagina',
+      arrLi:['React','Diseño Responsivo'],
+      flecha:'./flecha.svg',
+      arrLink:[
+        {
+          txtLink:'Ver Demo',
+          link:'https://semana-ies-tv.netlify.app/'
+        },
+        {
+          txtLink:'Ver Repositorio',
+          link:'https://github.com/AleGrimald/Semana-IES-2023'
+        },
+      ],
+      clase:'proyecto_img'
+    },
+    {
+      img:'./aleflix.png',
+      texto:['Alura Flix','Desarrollado en el curso Alura Latam','Tecnologias Implementadas'],
+      alter:'Imagen de la pagina',
+      arrLi:['React','Diseño Responsivo'],
+      flecha:'./flecha.svg',
+      arrLink:[
+        {
+          txtLink:'Ver Demo',
+          link:'https://aleflix.netlify.app/'
+        },
+        {
+          txtLink:'Ver Repositorio',
+          link:'https://github.com/AleGrimald/AluraFlix'
+        },
+      ],
+      clase:'proyecto_img'
+    },
   ]
+  const datosContacto={
+    texto:[
+      {
+        txtTexto:'¿Quieres contactarme?',
+        txtClass:'contacto_p1'
+      },
+      {
+        txtTexto:'Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.',
+        txtClass:'contacto_p2'
+      }
+    ],
+    camposInp:[
+      {
+        lblText:'Nombre',
+        inpType:'text',
+        inpId:'inp_nombre',
+      },
+      {
+        lblText:'E-mail',
+        inpType:'email',
+        inpId:'inp_mail',
+      },
+      {
+        lblText:'Asunto',
+        inpType:'text',
+        inpId:'inp_asunto',
+      }
+    ],
+    campoTxtArea:{
+      idTxtArea:'mensaje',
+      lblTextArea: 'Mensaje'
+    },
+    botones:[
+      {
+        inpType:'submit',
+        inpId:'inp_submit',
+        inpValor:'Enviar Mensaje'
+      },
+      {
+        inpType:'reset',
+        inpId:'inp_reset',
+        inpValor:'Limpiar Campos'
+      },
+    ]
+  }
   
-
   return (
     <div className="App">
       <Header datosHeader={datosHeader}/>
@@ -328,10 +426,8 @@ function App() {
       }
 
       {
-        btnContacto?<Contacto/>:<></>
+        btnContacto?<Contacto datosContacto={datosContacto}/>:<></>
       }
-      
-      <Footer />
     </div>
   );
 }

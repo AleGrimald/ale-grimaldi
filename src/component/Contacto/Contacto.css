@@ -1,0 +1,36 @@
+.contacto{
+    width: 100%;
+    height: 85dvh;
+    padding: 3rem 2rem 2rem 2rem;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    gap: 1rem;
+}
+
+.contacto_textoimg{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: top;
+}
+.contacto_txt{
+    width: 100%;
+    text-align: left;
+}
+.contacto_img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacto_img>img{
+    width: 300px;
+    height: 400px;
+}
+
+
